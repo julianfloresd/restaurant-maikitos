@@ -2,14 +2,14 @@ const createContactPage = () => {
     const content = document.querySelector('#content');
 
     //Contact Items
-    const contactContent = document.createElement('div');
-    contactContent.classList.add('contactContent')
-    content.appendChild(contactContent)
+    const pageContent = document.createElement('div');
+    pageContent.classList.add('pageContent')
+    content.appendChild(pageContent)
 
     //Address
     const containerAddress = document.createElement('div')
     containerAddress.classList.add('address')
-    contactContent.appendChild(containerAddress)
+    pageContent.appendChild(containerAddress)
     
     const addressHeader = document.createElement('h2')
     addressHeader.textContent = `Direcciones:`
@@ -32,7 +32,7 @@ const createContactPage = () => {
     //Working Hours
     const containerWorkingHours = document.createElement('div')
     containerWorkingHours.classList.add('hours')
-    contactContent.appendChild(containerWorkingHours)
+    pageContent.appendChild(containerWorkingHours)
     
     const workingHoursHeader = document.createElement('h2')
     workingHoursHeader.textContent = `Horarios:`
@@ -56,7 +56,7 @@ const createContactPage = () => {
     //Phone Number
     const containerPhoneNumber = document.createElement('div')
     containerPhoneNumber.classList.add('phone')
-    contactContent.appendChild(containerPhoneNumber)
+    pageContent.appendChild(containerPhoneNumber)
     
     const phoneHeader = document.createElement('h2')
     phoneHeader.textContent = `Numeros telefonicos:`

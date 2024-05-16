@@ -1,3 +1,7 @@
+import createContactPage from "./contact";
+import createHomePage from "./home";
+import createMenuPage from "./menu";
+
 const createTabs = () => {
     const content = document.querySelector('#content');
 
@@ -30,7 +34,29 @@ const createTabs = () => {
     contactTab.textContent = `Contact Us`
     contactTab.id = 'contact-tab'
     tabs.appendChild(contactTab)
+
+    homeTab.addEventListener('click', () => {
+        clearContent();
+        createHomePage();
+    })
+    menuTab.addEventListener('click', () => {
+        clearContent();
+        createMenuPage();
+    })
+    contactTab.addEventListener('click', () => {
+        clearContent();
+        createContactPage();
+    })
+}
+
+const clearContent = () => {
+    const content = document.querySelector("#content");
+    const pageContent = document.querySelector(".pageContent");
+    if (pageContent) {
+        content.removeChild(pageContent);
+    }
 }
 
 export default createTabs;
+
 

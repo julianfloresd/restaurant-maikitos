@@ -1,15 +1,15 @@
 const createMenuPage = () => {
     const content = document.querySelector('#content');
 
-    //Menu Items
-    const menuContent = document.createElement('div');
-    menuContent.classList.add('menuContent')
-    content.appendChild(menuContent)
+    //Menu Page Content
+    const pageContent = document.createElement('div');
+    pageContent.classList.add('pageContent')
+    content.appendChild(pageContent)
 
     //Entradas
     const containerEntradas = document.createElement('div')
     containerEntradas.classList.add('menu-category')
-    menuContent.appendChild(containerEntradas)
+    pageContent.appendChild(containerEntradas)
 
     const headerEntrada = document.createElement('h2')
     headerEntrada.classList.add('category-header')

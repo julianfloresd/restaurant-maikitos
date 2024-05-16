@@ -1,7 +1,7 @@
-import createHomePage from './home'
+import createHomePage from './home';
+import createTabs from './tabs';
 import createMenuPage from './menu';
 import createContactPage from './contact';
-import createTabs from './tabs'
 
 function initialLoad() {
     createTabs();
